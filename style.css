@@ -1,0 +1,276 @@
+nav{
+    margin-top: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    background-color: white;
+}
+.hero-section>img{
+    width: 85%;
+}
+.location>h5{
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.location>p{
+    font-size: 13px;
+}
+
+.vertical-line{
+    height: 65px;
+    border-left: 2px solid #f2f2f2;
+}
+
+.search-div{
+    padding-inline: 10px;
+    border: 1px solid #f2f2f2;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+}
+
+.search-div>input{
+    border: none;
+    background-color: transparent;
+    width: 40vw;
+    height: 45px;
+}
+
+::placeholder{
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.my-cart{
+    font-size: 14px !important;
+    border-radius: 10px !important;
+}
+
+.my-categories-1{
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-inline: 6.5vw;
+}
+
+.my-categories-1>img{
+    margin: -10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.my-container{
+    margin: auto;
+    width: 85%;
+   
+}
+.my-list{
+    white-space: nowrap;
+    overflow-x:scroll;
+    overflow-y:scroll;
+}
+
+.my-list>img{
+    padding-inline: 10px;
+}
+
+/* ::-webkit-scrollbar{
+    display: none;
+} */
+
+.category-section{
+    width: 85%;
+    margin: auto;
+}
+
+.my-card{
+    display: inline-block !important;
+    width: 138px;
+    box-sizing: border-box;
+    border-radius: 15px !important;
+    white-space: wrap;
+    margin-inline: 10px;
+    margin-bottom: 20px;
+}
+
+.my-card>img{
+    display: inline-block;
+    margin: auto;
+}
+
+.my-card-title{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.my-card-weight{
+    color: #666666;
+    font-size: 13px;
+}
+
+.card-price{
+    color: rgb(31, 31, 31);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 11px;
+    justify-content: space-around;
+}
+
+.my-button{
+    font-size: 13px !important;
+    border-radius: 12px !important;
+}
+
+.my-category{
+    margin-top: 25px;
+}
+
+footer{
+    width: 85%;
+    margin: auto;
+}
+
+#my-footer-row-4{
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#my-footer-row-3{
+    font-size: 15px;
+    text-align: justify;
+    color: #666666;
+}
+
+#my-footer-row-2{
+    font-size: 13px;
+    text-align: justify;
+    color: #666666;
+    display: flex;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+#footer__row__2__col1{
+    flex:1;
+    padding-inline:10px;
+
+}
+#footer__row__2__col2{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer__row__2__col1>h6{
+    color: #666666;
+}
+.some-box{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    background-color: #213a50;
+}
+
+#footer__row__2__col3{
+    flex:1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 50%;
+}
+.social-icon:hover{
+    color: black;
+    background-color: #f8cb45;
+    box-shadow: 3px 3px 15px black;
+}
+
+#my-footer-row-1{
+    display: flex;
+    margin-top: 30px;
+}
+
+#footer__table__1{
+    flex: 2;
+    width: 100%;
+}
+#footer__table__2{
+    flex: 3;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    color: #666666;
+    line-height: 30px;
+}
+td:hover{
+    line-height: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(30, 100, 5);
+}
+
+@media screen and (max-width:480px){
+    .hero-section>img{
+        display: none !important;
+    }
+    nav,#my-footer-row-1{
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: auto;
+    }
+    #my-footer-row-2,#footer__table__1,#footer__table__2,#footer__row__2__col2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    td{
+        padding-inline: 12px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .some-box{
+        margin-top: 10px;
+    }
+    #footer__row__2__col3{
+        justify-content: space-between;
+        width: 90vw;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .vertical-line{
+        display: none;
+    }
+    .search-div{
+        width: 90vw;
+    }
+    nav{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: static;
+    }
+    .location>p{
+        text-align: center;
+    }
+}
